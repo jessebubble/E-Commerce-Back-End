@@ -22,6 +22,9 @@ Create the code needed in server.js to sync the Sequelize models to the MySQL da
 
 ![Screencastify](https://img.shields.io/badge/screencastify-%23000000.svg?style=for-the-badge&logo=record&logoColor=white)
 
+<img src="./assets/images/E-Commerce.png">
+
+
 
 
 
