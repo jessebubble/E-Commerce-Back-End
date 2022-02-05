@@ -18,9 +18,13 @@ After creating the models and routes, run npm run seed to seed data to your data
 Create the code needed in server.js to sync the Sequelize models to the MySQL database on server start.
 
 ## WALKTHROUGH VIDEO
-link coming soon
-...
-...
+<a href="https://watch.screencastify.com/v/CNmBrPyrZmVnKMTsIg4J">Screencastify Walkthrough Video</a>
+
+![Screencastify](https://img.shields.io/badge/screencastify-%23000000.svg?style=for-the-badge&logo=record&logoColor=white)
+
+
+
+
 
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
