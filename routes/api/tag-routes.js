@@ -64,16 +64,21 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
   // update a tag's name by its `id` value
-  Tag.update({
+  Tag.update(req.body, {
+    individualHooks: true, // this will execute a SELECT followed by individual UPDATEs. A select is needed, because the row data needs to be passed to the hooks
     where: {
       id: req.params.id,
     },
   })
   .then((dbTagData) => {
-    if (!dbTagData) {
+    if (!dbTagData[0]) {
       res.status(404).json({ message: 'No tag found with this id' });
       return;
     }
+    res.json(dbTagData);
+  })
+  .catch((err) => {
+    console.log(err);
     res.status(500).json(err);
   });
 });
